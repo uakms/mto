@@ -4,11 +4,7 @@ mtojisyo
 JSON, CSV, TSV format dictionaries
 
 - kana-jisyo
-
-        mt-: from modern to traditional dictionary
-        tm-: from traditional to modern dictionary
+key: "modern kana orthography", value: "traditional kana orthography" object.
 
 - kanji-jisyo
-
-        no-: from new to old dictionary
-        on-: from old to new dictionary
+key: "new kanji character", value: "old kanji character" object.
