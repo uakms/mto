@@ -1,7 +1,7 @@
 mtojisyo
 ========
 
-JSON, CSV, TSV format dictionaries
+JSON, CSV format dictionaries
 
 - kana-jisyo
 key: "modern kana orthography", value: "traditional kana orthography" object.
