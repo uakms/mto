@@ -1,0 +1,87 @@
+@CHARSET "utf-8";
+
+body {
+/*
+    margin: 0 5% 0 5%;
+    background: black;
+    color: white;
+    max-width: 860px;
+*/
+}
+
+h1,h2,h3,h4,h5,h6,hr {
+    clear: both;
+}
+
+p.zero {
+    margin: 0px;
+}
+
+p.hoge {
+    float: left;
+    border: none;
+    margin: 0px 0px 6px 2px;
+    text-align: center;
+}
+
+p.right {
+    text-align: right;
+}
+
+table,th,td,tr {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+pre {
+    border: 1px solid darkgray;
+    background-color: lightgray;
+    margin: 1em 2em;
+    padding: 0.5em;
+    overflow: auto;
+}
+
+blockquote {
+    border: 1px solid #dddddd;
+    background-color: #f0f0f0;
+    margin: 1em 2em;
+    padding: 0.5em;
+}
+
+img {
+    width: 460px;
+}
+
+a {
+    text-decoration: none;
+}
+
+span.button_oldtonew {
+    font-size: 0.8em;
+    border: 1px solid darkgray;
+    padding: 0.2em 0.5em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    background: lightgreen;
+    border-radius: 0.5em 0.5em;
+    text-decoration: none;
+}
+
+span.button_newtoold {
+    font-size: 0.8em;
+    border: 1px solid darkgray;
+    padding: 0.2em 0.5em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    background: lightpink;
+    border-radius: 0.5em 0.5em;
+    text-decoration: none;
+}
+
+span.button_move {
+    font-size: 0.8em;
+    border: 1px solid darkgray;
+    padding: 0.2em 0.5em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    border-radius: 0.5em 0.5em;
+    text-decoration: none;
+}
