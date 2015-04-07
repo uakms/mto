@@ -1,6 +1,6 @@
 // Author: nakinor
 // Created: 2015-04-06
-// Revised: 2015-04-06
+// Revised: 2015-04-07
 
 function gsub(str, car, cdr) {
   return str.split(car).join(cdr);
@@ -97,7 +97,8 @@ function replaceTewToOld() {
 }
 
 function DictElements() {
-    document.write("<p>現代仮名使いから歴史的仮名遣いへの変換：" +
+    document.write("<p>現時点での辞書の要素数は次のとおりです。</p>" +
+                   "<p>現代仮名使いから歴史的仮名遣いへの変換：" +
                    CalcKanaElements()
                    + "、新字体から旧字体への変換：" +
                    CalcKanjiElements()
@@ -105,7 +106,7 @@ function DictElements() {
                    CalcKanaOnElements()
                    + "、旧字体から新字体への変換：" +
                    CalcKanjiOnElements()
-                   + "です。"
+                   + "です。</p>"
                   );
 }
 

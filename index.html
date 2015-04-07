@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp" lang="jp">
+<!DOCTYPE html>
+<html lang="ja">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta http-equiv="Content-Script-Type" content="text/javascript" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,28 +14,37 @@
     <script type="text/javascript" src="dic-kanji-on.json"></script>
     <script type="text/javascript" src="mto.js"></script>
 
+    <noscript>
+      <p>JavaScriptを有効にしないと使えません(&gt;_&lt;)</p>
+    </noscript>
+
     <form name="mto">
       <p class="hoge">
         <textarea type="text" name="tArea" cols="40" rows="20">
-笑ふ門には福来たる。</textarea><br>
+笑ふ門には福來たる。
+        </textarea><br />
         <input type="button"
                value="内容を消去"
-               onclick="mDel()">
+               onclick="mDel()" />
         <input type="button"
                value="旧→新"
                style="background:lightgreen"
-               onclick="mReplaceTradOldToModernNew()">
+               onclick="mReplaceTradOldToModernNew()" />
         <input type="button" value="新→旧"
                style="background:lightpink"
-               onclick="mReplaceModernNewToTradOld()">
+               onclick="mReplaceModernNewToTradOld()" />
         <input type="button" value="PC版"
                style="background:white"
-               onclick="document.location='./index_pc.html';">
+               onclick="document.location='./index_pc.html';" />
       </p>
     </form>
 
     <hr />
-    <p class="zero">Created by <a href="https://mobile.twitter.com/nakinor">nakinor</a>. Since Apl 6, 2015.</p>
+
+    <p>
+      Created by <a href="https://mobile.twitter.com/nakinor">nakinor</a>.
+      Since Apr 6, 2015.
+    </p>
 
   </body>
 </html>

@@ -1,10 +1,6 @@
-mtojisyo
-========
+mto
+===
 
-JSON format dictionaries
+mojiretsu wo tanjun ni okikae masu.
 
-- kana-jisyo
-key: "modern kana orthography", value: "traditional kana orthography" object.
-
-- kanji-jisyo
-key: "new kanji character", value: "old kanji character" object.
+http://nakinor.github.io/mto
