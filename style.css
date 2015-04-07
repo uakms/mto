@@ -4,13 +4,30 @@ h1,h2,h3,h4,h5,h6,hr {
     clear: both;
 }
 
+P {
+    margin: 0.5rem 0.0rem;
+}
+
 p.hoge {
     float: left;
     border: none;
-    margin: 0px 0px 6px 2px;
+    margin: 0px 0px 2px 0px;
     text-align: center;
 }
 
 a {
+    text-decoration: none;
+}
+
+textarea {
+    font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
+}
+
+input {
+    font-size: 0.8rem;
+    border: 1px solid darkgray;
+    padding: 0.1rem 0.2rem;
+    margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+    border-radius: 0.5rem 0.5rem;
     text-decoration: none;
 }

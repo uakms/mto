@@ -97,8 +97,8 @@ function replaceTewToOld() {
 }
 
 function DictElements() {
-    document.write("<p>現時点での辞書の要素数は次のとおりです。</p>" +
-                   "<p>現代仮名使いから歴史的仮名遣いへの変換：" +
+    document.write("<p>現時点での辞書の要素数は次のとおりです。<br />" +
+                   "現代仮名使いから歴史的仮名遣いへの変換：" +
                    CalcKanaElements()
                    + "、新字体から旧字体への変換：" +
                    CalcKanjiElements()
