@@ -2,17 +2,16 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <meta http-equiv="Content-Script-Type" content="text/javascript" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>新旧仮名漢字変換</title>
   </head>
   <body>
-    <script type="text/javascript" src="dic-kana.json"></script>
-    <script type="text/javascript" src="dic-kana-tm.json"></script>
-    <script type="text/javascript" src="dic-kanji.json"></script>
-    <script type="text/javascript" src="dic-kanji-on.json"></script>
-    <script type="text/javascript" src="mto.js"></script>
+    <script src="dic-kana.json"></script>
+    <script src="dic-kana-tm.json"></script>
+    <script src="dic-kanji.json"></script>
+    <script src="dic-kanji-on.json"></script>
+    <script src="mto.js"></script>
 
     <noscript>
       <p>JavaScriptを有効にしないと使えません(&gt;_&lt;)</p>
@@ -21,8 +20,7 @@
     <form name="mto">
       <p class="hoge">
         <textarea type="text" name="tArea" cols="40" rows="20">
-笑ふ門には福來たる。
-        </textarea><br />
+笑ふ門には福來たる。</textarea><br />
         <input type="button"
                value="内容を消去"
                onclick="mDel()" />
