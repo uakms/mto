@@ -1,6 +1,6 @@
 // Author: nakinor
 // Created: 2015-04-06
-// Revised: 2015-04-07
+// Revised: 2015-04-09
 
 function gsub(str, car, cdr) {
   return str.split(car).join(cdr);
@@ -12,11 +12,11 @@ function mDel() {
 
 function mReplaceTradOldToModernNew() {
     var str = document.mto.tArea.value;
-    for(var key in kanaTmData) {
-        str = gsub(str, key, kanaTmData[key]);
-    }
     for(var key in kanjiOnData) {
         str = gsub(str, key, kanjiOnData[key]);
+    }
+    for(var key in kanaTmData) {
+        str = gsub(str, key, kanaTmData[key]);
     }
     document.mto.tArea.value = str;
 }
@@ -44,11 +44,11 @@ function toBeforeTextArea() {
 
 function replaceTradOldToModernNew() {
     var str = document.mto.bef.value;
-    for(var key in kanaTmData) {
-        str = gsub(str, key,kanaTmData[key]);
-    }
     for(var key in kanjiOnData) {
         str = gsub(str, key,kanjiOnData[key]);
+    }
+    for(var key in kanaTmData) {
+        str = gsub(str, key,kanaTmData[key]);
     }
     document.mto.aft.value = str;
 }
@@ -88,7 +88,7 @@ function replaceOldToNew() {
     document.mto.aft.value = str;
 }
 
-function replaceTewToOld() {
+function replaceNewToOld() {
     var str=document.mto.bef.value;
     for(var key in kanjiData) {
         str = gsub(str, key,kanjiData[key]);
