@@ -6,32 +6,7 @@ function gsub(str, car, cdr) {
   return str.split(car).join(cdr);
 }
 
-function mDel() {
-    document.mto.tArea.value = "";
-}
-
-function mReplaceTradOldToModernNew() {
-    var str = document.mto.tArea.value;
-    for(var key in kanjiOnData) {
-        str = gsub(str, key, kanjiOnData[key]);
-    }
-    for(var key in kanaTmData) {
-        str = gsub(str, key, kanaTmData[key]);
-    }
-    document.mto.tArea.value = str;
-}
-
-function mReplaceModernNewToTradOld() {
-    var str = document.mto.tArea.value;
-    for(var key in kanaData) {
-        str = gsub(str, key,kanaData[key]);
-    }
-    for(var key in kanjiData) {
-        str = gsub(str, key,kanjiData[key]);
-    }
-    document.mto.tArea.value = str;
-}
-
+// for pc page
 function del() {
     document.mto.bef.value = "";
 }
@@ -42,56 +17,21 @@ function toBeforeTextArea() {
     document.mto.aft.value = "";
 }
 
-function replaceTradOldToModernNew() {
+function replaceStrings2(jisyo1, jisyo2) {
     var str = document.mto.bef.value;
-    for(var key in kanjiOnData) {
-        str = gsub(str, key,kanjiOnData[key]);
+    for(var key in jisyo1) {
+        str = gsub(str, key, jisyo1[key]);
     }
-    for(var key in kanaTmData) {
-        str = gsub(str, key,kanaTmData[key]);
+    for(var key in jisyo2) {
+        str = gsub(str, key, jisyo2[key]);
     }
     document.mto.aft.value = str;
 }
 
-function replaceModernNewToTradOld() {
-    var str = document.mto.bef.value;
-    for(var key in kanaData) {
-        str = gsub(str, key,kanaData[key]);
-    }
-    for(var key in kanjiData) {
-        str = gsub(str, key,kanjiData[key]);
-    }
-    document.mto.aft.value = str;
-}
-
-function replaceTradToModern() {
+function replaceStrings(jisyo) {
     var str=document.mto.bef.value;
-    for(var key in kanaTmData) {
-        str = gsub(str, key,kanaTmData[key]);
-    }
-    document.mto.aft.value = str;
-}
-
-function replaceModernToTrad() {
-    var str = document.mto.bef.value;
-    for(var key in kanaData) {
-        str = gsub(str, key,kanaData[key]);
-    }
-    document.mto.aft.value = str;
-}
-
-function replaceOldToNew() {
-    var str = document.mto.bef.value;
-    for(var key in kanjiOnData) {
-        str = gsub(str, key,kanjiOnData[key]);
-    }
-    document.mto.aft.value = str;
-}
-
-function replaceNewToOld() {
-    var str=document.mto.bef.value;
-    for(var key in kanjiData) {
-        str = gsub(str, key,kanjiData[key]);
+    for(var key in jisyo) {
+        str = gsub(str, key, jisyo[key]);
     }
     document.mto.aft.value = str;
 }
@@ -99,45 +39,37 @@ function replaceNewToOld() {
 function DictElements() {
     document.write("<p>現時点での辞書の要素数は次のとおりです。<br />" +
                    "現代仮名使いから歴史的仮名遣いへの変換：" +
-                   CalcKanaElements()
+                   CalcDictElements(kanaData)
                    + "、新字体から旧字体への変換：" +
-                   CalcKanjiElements()
+                   CalcDictElements(kanjiData)
                    + "、<br />歴史的仮名遣いから現代仮名使いへの変換：" +
-                   CalcKanaOnElements()
+                   CalcDictElements(kanaTmData)
                    + "、旧字体から新字体への変換：" +
-                   CalcKanjiOnElements()
+                   CalcDictElements(kanjiOnData)
                    + "です。</p>"
                   );
 }
 
-function CalcKanaElements() {
-    var kana_no = 0;
-    for (var index in kanaData) {
-        kana_no = kana_no + 1;
+function CalcDictElements(jisyo) {
+    var elem = 0;
+    for (var index in jisyo) {
+        elem = elem + 1;
     }
-    return kana_no;
+    return elem;
 }
 
-function CalcKanaOnElements() {
-    var kana_no = 0;
-    for (var index in kanaTmData) {
-        kana_no = kana_no + 1;
-    }
-    return kana_no;
+// for mobile page
+function mDel() {
+    document.mto.tArea.value = "";
 }
 
-function CalcKanjiElements() {
-    var kanji_no = 0;
-    for (var index in kanjiData) {
-        kanji_no = kanji_no + 1;
+function mReplaceStrings2(jisyo1, jisyo2) {
+    var str = document.mto.tArea.value;
+    for(var key in jisyo1) {
+        str = gsub(str, key, jisyo1[key]);
     }
-    return kanji_no;
-}
-
-function CalcKanjiOnElements() {
-    var kanji_no = 0;
-    for (var index in kanjiOnData) {
-        kanji_no = kanji_no + 1;
+    for(var key in jisyo2) {
+        str = gsub(str, key, jisyo2[key]);
     }
-    return kanji_no;
+    document.mto.tArea.value = str;
 }
