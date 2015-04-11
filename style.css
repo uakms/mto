@@ -4,13 +4,17 @@ h1,h2,h3,h4,h5,h6,hr {
     clear: both;
 }
 
+br.clear {
+ clear: both;
+}
+
 h2 {
-    margin: 1em 0em 0em 0em;
-    text-decoration: underline;
+    margin: 1em 0em 0.5em 0em;
+    border-bottom: 2px dotted green;
 }
 
 h3 {
-    margin: 0.5em 0em 0em 0em;
+    margin: 1em 0em 0em 0em;
 }
 
 P {
@@ -46,10 +50,18 @@ input {
 }
 
 pre {
-    border: 1px solid darkgray;
-    background-color: lightgray;
+    border: 0.5px solid green;
+    background-color: #ccffcc;
     margin: 1em 1em;
     padding: 0.5em;
     border-radius: 0.5rem 0.5rem;
     overflow: auto;
+}
+
+.post {
+    margin: 0.0em 0.0em 1.0em 0.0em;
+    padding: 0.0em 1.0em 1.0em 1.0em;
+    border-radius: 20px;
+    background: #eeffee;
+    border: 1px solid green;
 }
