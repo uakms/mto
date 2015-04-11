@@ -1,6 +1,6 @@
 // Author: nakinor
 // Created: 2015-04-06
-// Revised: 2015-04-10
+// Revised: 2015-04-11
 
 function gsub(str, car, cdr) {
   return str.split(car).join(cdr);
@@ -42,11 +42,11 @@ function DictElements() {
                    CalcDictElements(kanaData)
                    + "、新字体から旧字体への変換：" +
                    CalcDictElements(kanjiData)
-                   + "、<br />歴史的仮名遣いから現代仮名使いへの変換：" +
+                   + "<br />歴史的仮名遣いから現代仮名使いへの変換：" +
                    CalcDictElements(kanaTmData)
                    + "、旧字体から新字体への変換：" +
                    CalcDictElements(kanjiOnData)
-                   + "です。</p>"
+                   + "</p>"
                   );
 }
 
