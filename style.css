@@ -4,8 +4,21 @@ h1,h2,h3,h4,h5,h6,hr {
     clear: both;
 }
 
+h2 {
+    margin: 1em 0em 0em 0em;
+    text-decoration: underline;
+}
+
+h3 {
+    margin: 0.5em 0em 0em 0em;
+}
+
 P {
     margin: 0.5rem 0.0rem;
+}
+
+p.indent {
+    text-indent: 1em;
 }
 
 p.hoge {
@@ -30,4 +43,13 @@ input {
     margin: 0.2rem 0.2rem 0.2rem 0.2rem;
     border-radius: 0.5rem 0.5rem;
     text-decoration: none;
+}
+
+pre {
+    border: 1px solid darkgray;
+    background-color: lightgray;
+    margin: 1em 1em;
+    padding: 0.5em;
+    border-radius: 0.5rem 0.5rem;
+    overflow: auto;
 }
