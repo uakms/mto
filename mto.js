@@ -20,18 +20,18 @@ function toBeforeTextArea() {
 function replaceStrings2(jisyo1, jisyo2, flag) {
     var str = document.mto.bef.value;
     if (flag == 0) {
-        for(var key in jisyo1) {
-            str = gsub(str, jisyo1[key][0], jisyo1[key][1]);
+        for(var i = 0; i < jisyo1.length; i++) {
+            str = gsub(str, jisyo1[i][0], jisyo1[i][1]);
         }
-        for(var key in jisyo2) {
-            str = gsub(str, jisyo2[key][0], jisyo2[key][1]);
+        for(var i = 0; i < jisyo2.length; i++) {
+            str = gsub(str, jisyo2[i][0], jisyo2[i][1]);
         }
     } else if (flag == 1) {
-        for(var key in jisyo1) {
-            str = gsub(str, jisyo1[key][1], jisyo1[key][0]);
+        for(var i = 0; i < jisyo1.length; i++) {
+            str = gsub(str, jisyo1[i][1], jisyo1[i][0]);
         }
-        for(var key in jisyo2) {
-            str = gsub(str, jisyo2[key][1], jisyo2[key][0]);
+        for(var i = 0; i < jisyo1.length; i++) {
+            str = gsub(str, jisyo2[i][1], jisyo2[i][0]);
         }
     }
     document.mto.aft.value = str;
@@ -40,12 +40,12 @@ function replaceStrings2(jisyo1, jisyo2, flag) {
 function replaceStrings(jisyo, flag) {
     var str = document.mto.bef.value;
     if (flag == 0) {
-        for(var key in jisyo) {
-            str = gsub(str, jisyo[key][0], jisyo[key][1]);
+        for(var i = 0; i < jisyo.length; i++) {
+            str = gsub(str, jisyo[i][0], jisyo[i][1]);
         }
     } else if (flag == 1) {
-        for(var key in jisyo) {
-            str = gsub(str, jisyo[key][1], jisyo[key][0]);
+        for(var i = 0; i < jisyo.length; i++) {
+            str = gsub(str, jisyo[i][1], jisyo[i][0]);
         }
     }
     document.mto.aft.value = str;
@@ -70,18 +70,18 @@ function mDel() {
 function mReplaceStrings2(jisyo1, jisyo2, flag) {
     var str = document.mto.tArea.value;
     if (flag == 0) {
-        for(var key in jisyo1) {
-            str = gsub(str, jisyo1[key][0], jisyo1[key][1]);
+        for(var i = 0; i < jisyo1.length; i++) {
+            str = gsub(str, jisyo1[i][0], jisyo1[i][1]);
         }
-        for(var key in jisyo2) {
-            str = gsub(str, jisyo2[key][0], jisyo2[key][1]);
+        for(var i = 0; i < jisyo2.length; i++) {
+            str = gsub(str, jisyo2[i][0], jisyo2[i][1]);
         }
     } else if (flag == 1) {
-        for(var key in jisyo1) {
-            str = gsub(str, jisyo1[key][1], jisyo1[key][0]);
+        for(var i = 0; i < jisyo1.length; i++) {
+            str = gsub(str, jisyo1[i][1], jisyo1[i][0]);
         }
-        for(var key in jisyo2) {
-            str = gsub(str, jisyo2[key][1], jisyo2[key][0]);
+        for(var i = 0; i < jisyo2.length; i++) {
+            str = gsub(str, jisyo2[i][1], jisyo2[i][0]);
         }
     }
     document.mto.tArea.value = str;
