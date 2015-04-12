@@ -1,9 +1,9 @@
 // Author: nakinor
 // Created: 2015-04-06
-// Revised: 2015-04-11
+// Revised: 2015-04-12
 
-function gsub(str, car, cdr) {
-  return str.split(car).join(cdr);
+function gsub(str, key, val) {
+  return str.split(key).join(val);
 }
 
 // for pc page
@@ -17,55 +17,49 @@ function toBeforeTextArea() {
     document.mto.aft.value = "";
 }
 
-function replaceStrings2(jisyo1, jisyo2) {
+function replaceStrings2(jisyo1, jisyo2, flag) {
     var str = document.mto.bef.value;
-    for(var key in jisyo1) {
-        str = gsub(str, key, jisyo1[key]);
-    }
-    for(var key in jisyo2) {
-        str = gsub(str, key, jisyo2[key]);
+    if (flag == 0) {
+        for(var key in jisyo1) {
+            str = gsub(str, jisyo1[key][0], jisyo1[key][1]);
+        }
+        for(var key in jisyo2) {
+            str = gsub(str, jisyo2[key][0], jisyo2[key][1]);
+        }
+    } else if (flag == 1) {
+        for(var key in jisyo1) {
+            str = gsub(str, jisyo1[key][1], jisyo1[key][0]);
+        }
+        for(var key in jisyo2) {
+            str = gsub(str, jisyo2[key][1], jisyo2[key][0]);
+        }
     }
     document.mto.aft.value = str;
 }
 
-function replaceStrings(jisyo) {
-    var str=document.mto.bef.value;
-    for(var key in jisyo) {
-        str = gsub(str, key, jisyo[key]);
+function replaceStrings(jisyo, flag) {
+    var str = document.mto.bef.value;
+    if (flag == 0) {
+        for(var key in jisyo) {
+            str = gsub(str, jisyo[key][0], jisyo[key][1]);
+        }
+    } else if (flag == 1) {
+        for(var key in jisyo) {
+            str = gsub(str, jisyo[key][1], jisyo[key][0]);
+        }
     }
     document.mto.aft.value = str;
 }
 
 function DictElements() {
-    document.write("<p>現時点での辞書の要素数は次のとおりです。<br />" +
-                   "現代仮名使いから歴史的仮名遣いへの変換：" +
-                   CalcDictElements(kanaData)
-                   + "、新字体から旧字体への変換：" +
-                   CalcDictElements(kanjiData)
-                   + "<br />歴史的仮名遣いから現代仮名使いへの変換：" +
-                   CalcDictElements(kanaTmData)
-                   + "、旧字体から新字体への変換：" +
-                   CalcDictElements(kanjiOnData)
-                   + "</p>"
-                  );
+    document.write("<p>現時点での辞書の要素数は、" +
+                   "かな変換用辞書：" + kanaArray.length +
+                   "、漢字変換用辞書：" + kanjiArray.length + "</p>");
 }
 
 function DictElementsHan() {
-    document.write("<p>現時点での辞書の要素数は次のとおりです。<br />" +
-                   "ひらがなからハングルへの変換：" +
-                   CalcDictElements(hangJhData) +
-                   "、ハングルからひらがなへの変換：" +
-                   CalcDictElements(hangHjData) +
-                   "</p>"
-                  );
-}
-
-function CalcDictElements(jisyo) {
-    var elem = 0;
-    for (var index in jisyo) {
-        elem = elem + 1;
-    }
-    return elem;
+    document.write("<p>現時点での辞書の要素数は、" +
+                   "ハングル変換用辞書：" + hanArray.length + "</p>");
 }
 
 // for mobile page
@@ -73,13 +67,22 @@ function mDel() {
     document.mto.tArea.value = "";
 }
 
-function mReplaceStrings2(jisyo1, jisyo2) {
+function mReplaceStrings2(jisyo1, jisyo2, flag) {
     var str = document.mto.tArea.value;
-    for(var key in jisyo1) {
-        str = gsub(str, key, jisyo1[key]);
-    }
-    for(var key in jisyo2) {
-        str = gsub(str, key, jisyo2[key]);
+    if (flag == 0) {
+        for(var key in jisyo1) {
+            str = gsub(str, jisyo1[key][0], jisyo1[key][1]);
+        }
+        for(var key in jisyo2) {
+            str = gsub(str, jisyo2[key][0], jisyo2[key][1]);
+        }
+    } else if (flag == 1) {
+        for(var key in jisyo1) {
+            str = gsub(str, jisyo1[key][1], jisyo1[key][0]);
+        }
+        for(var key in jisyo2) {
+            str = gsub(str, jisyo2[key][1], jisyo2[key][0]);
+        }
     }
     document.mto.tArea.value = str;
 }

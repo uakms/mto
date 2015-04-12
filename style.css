@@ -18,11 +18,12 @@ h3 {
 }
 
 P {
-    margin: 0.5rem 0.0rem;
+    margin: 0.5em 0.0em;
 }
 
 p.indent {
     text-indent: 1em;
+    margin: 0.5em 0em 0.5em 0em;
 }
 
 p.hoge {

@@ -9,9 +9,7 @@
   </head>
   <body>
     <script src="data/dic-kana.json"></script>
-    <script src="data/dic-kana-tm.json"></script>
     <script src="data/dic-kanji.json"></script>
-    <script src="data/dic-kanji-on.json"></script>
 
     <noscript>
       <p>JavaScriptを有効にしないと使えません(&gt;_&lt;)</p>
@@ -27,10 +25,10 @@
         <input type="button"
                value="旧→新"
                style="background:lightgreen"
-               onclick="mReplaceStrings2(kanjiOnData, kanaTmData)" />
+               onclick="mReplaceStrings2(kanjiArray, kanaArray, 1)" />
         <input type="button" value="新→旧"
                style="background:lightpink"
-               onclick="mReplaceStrings2(kanaData, kanjiData)" />
+               onclick="mReplaceStrings2(kanaArray, kanjiArray, 0)" />
         <input type="button" value="PC版"
                style="background:white"
                onclick="document.location='./kanakan_pc.html';" />

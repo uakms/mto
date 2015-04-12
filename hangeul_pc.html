@@ -8,8 +8,7 @@
     <title>はんぐるの変換</title>
   </head>
   <body>
-    <script src="data/dic-hangeul-jh.json"></script>
-    <script src="data/dic-hangeul-hj.json"></script>
+    <script src="data/dic-hangeul.json"></script>
 
     <noscript>
       <p>JavaScriptを有効にしないと使えません(&gt;_&lt;)</p>
@@ -33,18 +32,18 @@
                onclick="toBeforeTextArea()" />
       </p>
 
-      <h6> </h6>
+      <br class="clear" />
 
       <p class="hoge">
         日韓変換：
         <input type="button"
-               value="ひらがな→ハングル"
-               style="background:lightgreen"
-               onclick="replaceStrings(hangJhData)" />&nbsp;
-        <input type="button"
                value="ハングル→ひらがな"
+               style="background:lightgreen"
+               onclick="replaceStrings(hanArray, 1)" />&nbsp;
+        <input type="button"
+               value="ひらがな→ハングル"
                style="background:lightpink"
-               onclick="replaceStrings(hangHjData)" />
+               onclick="replaceStrings(hanArray, 0)" />
       </p>
 </form>
 

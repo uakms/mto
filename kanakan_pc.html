@@ -9,9 +9,7 @@
   </head>
   <body>
     <script src="data/dic-kana.json"></script>
-    <script src="data/dic-kana-tm.json"></script>
     <script src="data/dic-kanji.json"></script>
-    <script src="data/dic-kanji-on.json"></script>
 
     <noscript>
       <p>JavaScriptを有効にしないと使えません(&gt;_&lt;)</p>
@@ -41,11 +39,11 @@
         <input type="button"
                value="旧字旧かな→新字新かな"
                style="background:lightgreen"
-               onclick="replaceStrings2(kanjiOnData, kanaTmData)" />&nbsp;
+               onclick="replaceStrings2(kanjiArray, kanaArray, 1)" />&nbsp;
         <input type="button"
                value="新字新かな→旧字旧かな"
                style="background:lightpink"
-               onclick="replaceStrings2(kanaData, kanjiData)" />
+               onclick="replaceStrings2(kanaArray, kanjiArray, 0)" />
       </p>
 
       <br class="clear" />
@@ -55,11 +53,11 @@
         <input type="button"
                value="旧かな→新かな"
                style="background:lightgreen"
-               onclick="replaceStrings(kanaTmData)" />&nbsp;
+               onclick="replaceStrings(kanaArray, 1)" />&nbsp;
         <input type="button"
                value="新かな→旧かな"
                style="background:lightpink"
-               onclick="replaceStrings(kanaData)" />
+               onclick="replaceStrings(kanaArray, 0)" />
       </p>
 
       <br class="clear" />
@@ -69,11 +67,11 @@
         <input type="button"
                value="旧字体→新字体"
                style="background:lightgreen"
-               onclick="replaceStrings(kanjiOnData)" />&nbsp;
+               onclick="replaceStrings(kanjiArray, 1)" />&nbsp;
         <input type="button"
                value="新字体→旧字体"
                style="background:lightpink"
-               onclick="replaceStrings(kanjiData)" />
+               onclick="replaceStrings(kanjiArray, 0)" />
       </p>
 </form>
 
