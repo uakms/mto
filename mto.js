@@ -1,6 +1,6 @@
 // Author: nakinor
 // Created: 2015-04-06
-// Revised: 2015-04-12
+// Revised: 2015-04-13
 
 function gsub(str, key, val) {
   return str.split(key).join(val);
@@ -30,7 +30,7 @@ function replaceStrings2(jisyo1, jisyo2, flag) {
         for(var i = 0; i < jisyo1.length; i++) {
             str = gsub(str, jisyo1[i][1], jisyo1[i][0]);
         }
-        for(var i = 0; i < jisyo1.length; i++) {
+        for(var i = 0; i < jisyo2.length; i++) {
             str = gsub(str, jisyo2[i][1], jisyo2[i][0]);
         }
     }
