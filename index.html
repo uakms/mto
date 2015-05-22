@@ -17,8 +17,8 @@
 
     <form name="mto">
       <p class="hoge">
-        <textarea type="text" name="tArea" cols="40" rows="20">
-笑ふ門には福來たる。</textarea><br />
+        <textarea type="text" name="tArea" cols="40" rows="20"
+                  placeholder="笑ふ門には福來たる。"></textarea><br />
         <input type="button"
                value="消去"
                onclick="mDel()" />
@@ -34,6 +34,10 @@
                onclick="document.location='./kanakan_pc.html';" />
       </p>
     </form>
+
+    <script>
+      document.mto.tArea.focus();
+    </script>
 
     <hr />
 
