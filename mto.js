@@ -1,6 +1,6 @@
 // Author: nakinor
 // Created: 2015-04-06
-// Revised: 2015-04-13
+// Revised: 2015-07-16
 
 function gsub(str, key, val) {
   return str.split(key).join(val);
@@ -52,9 +52,10 @@ function replaceStrings(jisyo, flag) {
 }
 
 function DictElements() {
-    document.write("<p>現時点での辞書の要素数は、" +
-                   "かな変換用辞書：" + kanaArray.length +
-                   "、漢字変換用辞書：" + kanjiArray.length + "</p>");
+    var total = kanaArray.length + kanjiArray.length;
+    document.write("<p>現時点での辞書の要素数は " + total +
+                   "（かな変換用:" + kanaArray.length +
+                   " 漢字変換用:" + kanjiArray.length + "）</p>");
 }
 
 function DictElementsHan() {
