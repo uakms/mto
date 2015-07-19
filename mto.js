@@ -1,6 +1,6 @@
 // Author: nakinor
 // Created: 2015-04-06
-// Revised: 2015-07-16
+// Revised: 2015-07-19
 
 function gsub(str, key, val) {
   return str.split(key).join(val);
@@ -61,6 +61,19 @@ function DictElements() {
 function DictElementsHan() {
     document.write("<p>現時点での辞書の要素数は、" +
                    "ハングル変換用辞書：" + hanArray.length + "</p>");
+}
+
+function readFileInLocal() {
+    document.getElementById('ifile')
+        .addEventListener('change',
+                          function(evt){
+                              var file = evt.target.files[0];
+                              var reader = new FileReader();
+                              reader.readAsText(file, 'UTF-8');
+                              reader.onload = function(e){
+                                  document.mto.bef.value = reader.result;
+                              }},
+                          false);
 }
 
 // for mobile page
