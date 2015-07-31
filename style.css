@@ -33,6 +33,12 @@ p.set {
     text-align: center;
 }
 
+p.mobset {
+    border: none;
+    margin: 0px 5px 2px 0px;
+    text-align: center;
+}
+
 a {
     text-decoration: none;
 }
