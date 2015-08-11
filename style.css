@@ -39,12 +39,20 @@ p.mobset {
     text-align: center;
 }
 
+textarea.mobset {
+    font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
+    width: 300px;
+    height: 480px;
+}
+
 a {
     text-decoration: none;
 }
 
 textarea {
     font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
+    width: 460px;
+    height: 380px;
 }
 
 input {
