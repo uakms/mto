@@ -41,6 +41,7 @@ p.mobset {
 
 textarea.mobset {
     font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
+    font-size: 1.1em;
     width: 300px;
     height: 380px;
 }
