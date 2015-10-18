@@ -1,6 +1,6 @@
 // Author: nakinor
 // Created: 2015-04-06
-// Revised: 2015-07-19
+// Revised: 2015-10-13
 
 function gsub(str, key, val) {
   return str.split(key).join(val);
@@ -20,17 +20,17 @@ function toBeforeTextArea() {
 function replaceStrings2(jisyo1, jisyo2, flag) {
     var str = document.mto.bef.value;
     if (flag == 0) {
-        for(var i = 0; i < jisyo1.length; i++) {
+        for (var i = 0; i < jisyo1.length; i++) {
             str = gsub(str, jisyo1[i][0], jisyo1[i][1]);
         }
-        for(var i = 0; i < jisyo2.length; i++) {
+        for (var i = 0; i < jisyo2.length; i++) {
             str = gsub(str, jisyo2[i][0], jisyo2[i][1]);
         }
     } else if (flag == 1) {
-        for(var i = 0; i < jisyo1.length; i++) {
+        for (var i = 0; i < jisyo1.length; i++) {
             str = gsub(str, jisyo1[i][1], jisyo1[i][0]);
         }
-        for(var i = 0; i < jisyo2.length; i++) {
+        for (var i = 0; i < jisyo2.length; i++) {
             str = gsub(str, jisyo2[i][1], jisyo2[i][0]);
         }
     }
@@ -40,11 +40,11 @@ function replaceStrings2(jisyo1, jisyo2, flag) {
 function replaceStrings(jisyo, flag) {
     var str = document.mto.bef.value;
     if (flag == 0) {
-        for(var i = 0; i < jisyo.length; i++) {
+        for (var i = 0; i < jisyo.length; i++) {
             str = gsub(str, jisyo[i][0], jisyo[i][1]);
         }
     } else if (flag == 1) {
-        for(var i = 0; i < jisyo.length; i++) {
+        for (var i = 0; i < jisyo.length; i++) {
             str = gsub(str, jisyo[i][1], jisyo[i][0]);
         }
     }
@@ -66,11 +66,11 @@ function DictElementsHan() {
 function readFileInLocal() {
     document.getElementById('ifile')
         .addEventListener('change',
-                          function(evt){
+                          function(evt) {
                               var file = evt.target.files[0];
                               var reader = new FileReader();
                               reader.readAsText(file, 'UTF-8');
-                              reader.onload = function(e){
+                              reader.onload = function(e) {
                                   document.mto.bef.value = reader.result;
                               }},
                           false);
@@ -84,17 +84,17 @@ function mDel() {
 function mReplaceStrings2(jisyo1, jisyo2, flag) {
     var str = document.mto.tArea.value;
     if (flag == 0) {
-        for(var i = 0; i < jisyo1.length; i++) {
+        for (var i = 0; i < jisyo1.length; i++) {
             str = gsub(str, jisyo1[i][0], jisyo1[i][1]);
         }
-        for(var i = 0; i < jisyo2.length; i++) {
+        for (var i = 0; i < jisyo2.length; i++) {
             str = gsub(str, jisyo2[i][0], jisyo2[i][1]);
         }
     } else if (flag == 1) {
-        for(var i = 0; i < jisyo1.length; i++) {
+        for (var i = 0; i < jisyo1.length; i++) {
             str = gsub(str, jisyo1[i][1], jisyo1[i][0]);
         }
-        for(var i = 0; i < jisyo2.length; i++) {
+        for (var i = 0; i < jisyo2.length; i++) {
             str = gsub(str, jisyo2[i][1], jisyo2[i][0]);
         }
     }
