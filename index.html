@@ -3,48 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="mto.js"></script>
+    <meta http-equiv="refresh" content="1;URL=site/index.html">
     <title>新旧仮名漢字変換</title>
   </head>
   <body>
-    <script src="json/dic-kana.json"></script>
-    <script src="json/dic-kanji.json"></script>
-
-    <noscript>
-      <p>JavaScriptを有効にしないと使えません(&gt;_&lt;)</p>
-    </noscript>
-
-    <form name="mto">
-      <p class="mobset">
-        <textarea class= "mobset" type="text" name="tArea" cols="40" rows="20"
-                  placeholder="笑ふ門には福來たる。"></textarea><br />
-        <input type="button"
-               value="消去"
-               onclick="mDel()" />
-        <input type="button"
-               value="旧→新"
-               style="background:lightgreen"
-               onclick="mReplaceStrings2(kanjiArray, kanaArray, 1)" />
-        <input type="button" value="新→旧"
-               style="background:lightpink"
-               onclick="mReplaceStrings2(kanaArray, kanjiArray, 0)" />
-        <input type="button" value="PC版"
-               style="background:white"
-               onclick="document.location='./kanakan_pc.html';" />
-      </p>
-    </form>
-
-    <script>
-      document.mto.tArea.focus();
-    </script>
-
-    <hr />
-
-    <p>
-      Created by <a href="https://mobile.twitter.com/nakinor">nakinor</a>.
-      Since Apr 6, 2015.
-    </p>
-
+      <p>Site のディレクトリ構成を変えました(&gt;_&lt;)</p>
   </body>
 </html>
