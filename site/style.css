@@ -33,6 +33,12 @@ p.set {
     text-align: center;
 }
 
+p.button_set {
+    float: left;
+    border: none;
+    margin: 0px 5px 2px 0px;
+}
+
 p.mobset {
     border: none;
     margin: 0px 5px 2px 0px;
@@ -46,14 +52,35 @@ textarea.mobset {
     height: 380px;
 }
 
-a {
-    text-decoration: none;
+@media screen and (min-width: 960px) {
+    textarea {
+        font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
+        font-size: 1rem;
+        width: 460px;
+        height: 380px;
+    }
 }
 
-textarea {
-    font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
-    width: 460px;
-    height: 380px;
+@media screen and (min-width: 800px) {
+    textarea {
+        font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
+        font-size: 1rem;
+        width: 380px;
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    textarea {
+        font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
+        font-size: 1rem;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+a {
+    text-decoration: none;
 }
 
 input {
