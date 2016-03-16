@@ -6,7 +6,7 @@ JSON 形式の辞書を参照して文字列を単純に置き換えていきま
 
 かつて旧字旧仮名を練習していた時に、それが間違っていないかどうかを Emacs 上で確認するために作成したものが原型になっています。いつの間にか登録している単語が多くなってきて「これは確認するだけでなく、文章の変換目的に使えるのではないか？」と思い至り、Emacs Lisp ではじめて実装されました。
 
-Ruby, Python, Vim script, Scheme, Perl, Lua, C#, Common Lisp, Golang, Objective-C, C, node.js, C++ と実装してきました。ファイルオープン、パス、正規表現、配列、ハッシュ、引数の処理など、基本的なものしか触れていませんが、自分にとっては「Hello, World!」的な[課題](https://github.com/nakinor/snapshot)になっています。
+Ruby, Python, Vim script, Scheme, Perl, Lua, C#, Common Lisp, Golang, Objective-C, C, node.js, C++, PHP と実装してきました。ファイルオープン、パス、正規表現、配列、ハッシュ、引数の処理など、基本的なものしか触れていませんが、自分にとっては「Hello, World!」的な[課題](https://github.com/nakinor/snapshot)になっています。
 
 GUI 的なものについては、C# で .NET Framework 版、Ruby の Sinatra で Web アプリ、Objective-C で Cocoa 版と iOS 版を作りました。
 
