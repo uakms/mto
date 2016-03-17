@@ -1,5 +1,5 @@
 // Author: nakinor
-// Created: 2015-04-06
+// Created: 2014-04-06
 // Revised: 2015-10-13
 
 function gsub(str, key, val) {
