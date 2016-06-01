@@ -52,7 +52,7 @@ textarea.mobset {
     height: 380px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 960px) {
     textarea {
         font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
         font-size: 1rem;
@@ -61,12 +61,12 @@ textarea.mobset {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 359px) {
     textarea {
         font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
         font-size: 1rem;
         width: 300px;
-        height: 300px;
+        height: 240px;
     }
 }
 
