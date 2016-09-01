@@ -1,6 +1,6 @@
 # mto - mojiretsu wo tanjun ni okikae masu.
 
-とりあえず [ここ](http://nakinor.github.io/mto/site/index.html) に移動して触ってみてください。
+とりあえず [ここ](http://nakinor.github.io/mto/index.html) に移動して触ってみてください。
 
 JSON 形式の辞書を参照して文字列を単純に置き換えていきます。複雑なアルゴリズムはなく、テキストエリアに入力されている文字列に対して、辞書の要素すべてを順番に検索＆置換していくだけです。
 
