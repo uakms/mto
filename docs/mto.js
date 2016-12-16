@@ -1,6 +1,6 @@
 // Author: nakinor
 // Created: 2014-04-06
-// Revised: 2015-10-13
+// Revised: 2016-12-16
 
 function gsub(str, key, val) {
   return str.split(key).join(val);
@@ -17,8 +17,20 @@ function toBeforeTextArea() {
     document.mto.aft.value = "";
 }
 
+function deleteIVS(str) {
+    var ivsArr =["%F3%A0%84%80", "%F3%A0%84%81", "%F3%A0%84%82",
+                 "%F3%A0%84%83", "%F3%A0%84%84", "%F3%A0%84%85"];
+    var enc_str = encodeURIComponent(str);
+    for (var i=0; i < ivsArr.length; i++) {
+        enc_str = gsub(enc_str, ivsArr[i], "");
+    }
+    dec_str = decodeURIComponent(enc_str);
+    return dec_str;
+}
+
 function replaceStrings2(jisyo1, jisyo2, flag) {
     var str = document.mto.bef.value;
+    str = deleteIVS(str);
     if (flag == 0) {
         for (var i = 0; i < jisyo1.length; i++) {
             str = gsub(str, jisyo1[i][0], jisyo1[i][1]);
@@ -39,6 +51,7 @@ function replaceStrings2(jisyo1, jisyo2, flag) {
 
 function replaceStrings(jisyo, flag) {
     var str = document.mto.bef.value;
+    str = deleteIVS(str);
     if (flag == 0) {
         for (var i = 0; i < jisyo.length; i++) {
             str = gsub(str, jisyo[i][0], jisyo[i][1]);
@@ -51,14 +64,14 @@ function replaceStrings(jisyo, flag) {
     document.mto.aft.value = str;
 }
 
-function DictElements() {
+function dictElements() {
     var total = kanaArray.length + kanjiArray.length;
     document.write("<p>現時点での辞書の要素数は " + total +
                    "（かな変換用:" + kanaArray.length +
                    " 漢字変換用:" + kanjiArray.length + "）</p>");
 }
 
-function DictElementsHan() {
+function dictElementsHan() {
     document.write("<p>現時点での辞書の要素数は、" +
                    "ハングル変換用辞書：" + hanArray.length + "</p>");
 }
@@ -83,6 +96,7 @@ function mDel() {
 
 function mReplaceStrings2(jisyo1, jisyo2, flag) {
     var str = document.mto.tArea.value;
+    str = deleteIVS(str);
     if (flag == 0) {
         for (var i = 0; i < jisyo1.length; i++) {
             str = gsub(str, jisyo1[i][0], jisyo1[i][1]);
