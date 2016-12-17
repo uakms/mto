@@ -1,6 +1,6 @@
 // Author: nakinor
 // Created: 2014-04-06
-// Revised: 2016-12-16
+// Revised: 2016-12-17
 
 function gsub(str, key, val) {
   return str.split(key).join(val);
@@ -69,11 +69,6 @@ function dictElements() {
     document.write("<p>現時点での辞書の要素数は " + total +
                    "（かな変換用:" + kanaArray.length +
                    " 漢字変換用:" + kanjiArray.length + "）</p>");
-}
-
-function dictElementsHan() {
-    document.write("<p>現時点での辞書の要素数は、" +
-                   "ハングル変換用辞書：" + hanArray.length + "</p>");
 }
 
 function readFileInLocal() {

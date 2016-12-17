@@ -1,5 +1,11 @@
 @CHARSET "utf-8";
 
+body {
+    font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
+    font-size: 1.0rem;
+    max-width: 960px;
+}
+
 h1,h2,h3,h4,h5,h6,hr {
     clear: both;
 }
