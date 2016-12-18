@@ -1,6 +1,6 @@
 // Author: nakinor
 // Created: 2014-04-06
-// Revised: 2016-12-17
+// Revised: 2016-12-18
 
 function gsub(str, key, val) {
   return str.split(key).join(val);
@@ -18,13 +18,10 @@ function toBeforeTextArea() {
 }
 
 function deleteIVS(str) {
-    var ivsArr =["%F3%A0%84%80", "%F3%A0%84%81", "%F3%A0%84%82",
-                 "%F3%A0%84%83", "%F3%A0%84%84", "%F3%A0%84%85"];
+    var vs_re = /%F3%A0%84%8[0-9|A-F]/;
     var enc_str = encodeURIComponent(str);
-    for (var i=0; i < ivsArr.length; i++) {
-        enc_str = gsub(enc_str, ivsArr[i], "");
-    }
-    dec_str = decodeURIComponent(enc_str);
+    var novs_str = gsub(enc_str, vs_re, "");
+    var dec_str = decodeURIComponent(novs_str);
     return dec_str;
 }
 
