@@ -1,6 +1,6 @@
 // Author: nakinor
 // Created: 2014-04-06
-// Revised: 2016-12-18
+// Revised: 2017-01-11
 
 function gsub(str, key, val) {
   return str.split(key).join(val);
@@ -27,7 +27,10 @@ function deleteIVS(str) {
 
 function replaceStrings2(jisyo1, jisyo2, flag) {
     var str = document.mto.bef.value;
-    str = deleteIVS(str);
+    var del_ivs = document.forms.mto.del_IVS_yes.checked
+    if (del_ivs == true) {
+        str = deleteIVS(str);
+    }
     if (flag == 0) {
         for (var i = 0; i < jisyo1.length; i++) {
             str = gsub(str, jisyo1[i][0], jisyo1[i][1]);
@@ -48,7 +51,10 @@ function replaceStrings2(jisyo1, jisyo2, flag) {
 
 function replaceStrings(jisyo, flag) {
     var str = document.mto.bef.value;
-    str = deleteIVS(str);
+    var del_ivs = document.forms.mto.del_IVS_yes.checked
+    if (del_ivs == true) {
+        str = deleteIVS(str);
+    }
     if (flag == 0) {
         for (var i = 0; i < jisyo.length; i++) {
             str = gsub(str, jisyo[i][0], jisyo[i][1]);
@@ -88,7 +94,10 @@ function mDel() {
 
 function mReplaceStrings2(jisyo1, jisyo2, flag) {
     var str = document.mto.tArea.value;
-    str = deleteIVS(str);
+    var del_ivs = document.forms.mto.del_IVS_yes.checked
+    if (del_ivs == true) {
+        str = deleteIVS(str);
+    }
     if (flag == 0) {
         for (var i = 0; i < jisyo1.length; i++) {
             str = gsub(str, jisyo1[i][0], jisyo1[i][1]);

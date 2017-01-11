@@ -35,7 +35,7 @@
         <input type="button"
                value="旧字旧かな→新字新かな"
                style="background:lightgreen"
-               onclick="replaceStrings2(kanjiArray, kanaArray, 1)" />&nbsp;
+               onclick="replaceStrings2(kanjiArray, kanaArray, 1)" />
         <input type="button"
                value="新字新かな→旧字旧かな"
                style="background:lightpink"
@@ -48,7 +48,7 @@
         <input type="button"
                value="旧かな→新かな"
                style="background:lightgreen"
-               onclick="replaceStrings(kanaArray, 1)" />&nbsp;
+               onclick="replaceStrings(kanaArray, 1)" />
         <input type="button"
                value="新かな→旧かな"
                style="background:lightpink"
@@ -61,11 +61,18 @@
         <input type="button"
                value="旧字体→新字体"
                style="background:lightgreen"
-               onclick="replaceStrings(kanjiArray, 1)" />&nbsp;
+               onclick="replaceStrings(kanjiArray, 1)" />
         <input type="button"
                value="新字体→旧字体"
                style="background:lightpink"
                onclick="replaceStrings(kanjiArray, 0)" /></p>
+
+      <br class="clear" />
+
+      <p class="button_set">
+        <input type="checkbox" id="del_IVS_yes" checked="checked" />
+        異体字セレクタを削除する
+      </p>
 
       <br class="clear" />
 
@@ -78,7 +85,7 @@
 
     <hr />
 
-    <p>「歴史的仮名遣い」と「現代仮名使い」とを相互に変換するページ <a href="http://mto.herokuapp.com">mto</a> を JavaScript で実装したものです。一度読み込んでしまえば、変換の度にサーバへアクセスしないので高速ですし、データ通信量もわずかです。スマホ向けの<a href="./sp.html">ページ</a>もあります。変換の都合上、異体字セレクタは削除されます。苦情等は GitHub の<a href="https://github.com/nakinor/mto">プロジェクトページ</a>まで。</p>
+    <p>「歴史的仮名遣い」と「現代仮名使い」とを相互に変換する<a href="http://mto.herokuapp.com">ページ</a>を JavaScript で実装したものです。変換の度にサーバへアクセスしないため高速ですしデータ通信量も節約できます。スマホ向けの<a href="./sp.html">ページ</a>もあります。変換の都合上、異体字セレクタは削除されます(既定)。要望等は<a href="https://github.com/nakinor/mto">こちら</a>まで。</p>
 
     <script>dictElements();</script>
 
