@@ -8,14 +8,17 @@
 - docs/mto.js, index.html, sp.html, style.css (画面を構成するため)
 - docs/dic-kana.json, dic-kanji.json (本体の辞書を JSON に変換したもの)
 
+### その他
+- convert.go (本体の辞書を JSON に変換するもの)
+
 ### うだうだ
 とりあえず [ここ](http://nakinor.github.io/mto/) に移動して触ってみれば README を読まんでもわかるんちゃう？
 
 JSON 形式の辞書を参照して文字列を単純に置き換えていきます。複雑なアルゴリズムはなく、テキストエリアに入力されている文字列に対して、辞書の要素すべてを順番に検索＆置換していくだけです。
 
-かつて旧字旧仮名を練習していた時に、それが間違っていないかどうかを Emacs 上で確認するために作成したものが原型になっています。いつの間にか登録している単語が多くなってきて「これは確認するだけでなく、文章の変換目的に使えるのではないか？」と思い至り、Emacs Lisp ではじめて実装されました。
+かつて旧字旧仮名を練習していた時に、それが間違っていないかどうかを Emacs 上で確認するために作成したものが原型になっています。いつの間にか登録している単語が多くなってきて「これは確認するだけでなく、文章の変換目的に使えるのではないか？」と思い至り、Emacs Lisp ではじめて実装しました。
 
-Ruby, Python, Vim script, Scheme, Perl, Lua, C#, Common Lisp, Golang, Objective-C, C, node.js, C++, PHP, Swift と実装してきました。ファイルオープン、パス、正規表現、配列、ハッシュ、引数の処理など、基本的なものしか触れていませんが、自分にとっては「Hello, World!」的な[課題](https://github.com/nakinor/snapshot)となっています。これらのプログラムで利用するためのデータがこの辞書です。
+Ruby, Python3, Vim script, Scheme, Perl5, Lua, C#, Common Lisp, Golang, Objective-C, C, node.js, C++, PHP, Swift と異なる言語で実装をしてきました。ファイルオープン、パス、正規表現、配列、ハッシュ、引数の処理など、基本的なものしか触れていませんが、自分にとっては「Hello, World!」的な[課題](https://github.com/nakinor/snapshot)となっています。これらのプログラムで利用するためのデータがこの辞書です。
 
 GUI 的なものについては、C# で .NET Framework 版、Ruby の Sinatra で Web アプリ、Objective-C で Cocoa 版と iOS 版、JavaScript で Electron 版を作りました。
 
