@@ -20,7 +20,7 @@ JSON 形式の辞書を参照して文字列を単純に置き換えていきま
 
 Ruby, Python3, Vim script, Scheme, Perl5, Lua, C#, Common Lisp, Golang, Objective-C, C, node.js, C++, PHP, Swift と異なる言語で実装をしてきました。ファイルオープン、パス、正規表現、配列、ハッシュ、引数の処理など、基本的なものしか触れていませんが、自分にとっては「Hello, World!」的な[課題](https://github.com/nakinor/snapshot)となっています。これらのプログラムで利用するためのデータがこの辞書です。
 
-GUI 的なものについては、C# で .NET Framework 版、Ruby の Sinatra で Web アプリ、Objective-C で Cocoa 版と iOS 版、JavaScript で Electron 版を作りました。
+GUI 的なものについては、C# で Windows Forms 版、Ruby の Sinatra で Web アプリ、Objective-C で Cocoa 版と iOS 版、JavaScript で Electron 版を作りました。
 
 今まで JavaScript は敬遠していましたが、GitHub で動かしてみようと実装しました。この JavaScript で実装したものは、ファイルをダウンロード(docs/ 以下のみで良い)してウェブブラウザで開けばローカルで動きますし、どこかのホームページにアップロードしても(たぶん)動きます。クロスドメインなことはしてませんし。
 
