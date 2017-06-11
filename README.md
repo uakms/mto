@@ -6,14 +6,14 @@
 
 ### 本体を説明するための付属品
 - docs/mto.js, index.html, sp.html, style.css (画面を構成するため)
-- docs/howto.html (使い方を説明するためのもの)
 - docs/dic-kana.json, dic-kanji.json (本体の辞書を JSON に変換したもの)
+- docs/howto.html (使い方を説明するためのもの)
 
 ### その他
 - convert.go (本体の辞書を JSON に変換するもの)
 
 ### うだうだ
-とりあえず [ここ](http://nakinor.github.io/mto/) に移動して触ってみれば README を読まんでもわかるんちゃう？と思ったのは私だけで「結果を入力へ」とかがわらからんらしい。[HowTo](http://nakinor.github.io/mto/howto.html) を読んでや。
+とりあえず [ここ](http://nakinor.github.io/mto/) に移動して触ってみれば README を読まんでもわかるんちゃう？(と思ったのは私だけで「結果を入力へ」とかわけわからんらしい。[HowTo](http://nakinor.github.io/mto/howto.html) を読んでや。それと w3m のようなテキストブラウザで JavaScript が使えん場合は [こっち](http://mto.herokuapp.com/sp) で試してみてな)
 
 JSON 形式の辞書を参照して文字列を単純に置き換えていきます。複雑なアルゴリズムはなく、テキストエリアに入力されている文字列に対して、辞書の要素すべてを順番に検索＆置換していくだけです。
 
