@@ -84,5 +84,7 @@ func main() {
 	OutputJsonDict(kanaArr, "kanaArray", "docs/dic-kana.json")
 	kanjiArr := CreateJsonDict("kanji-jisyo")
 	OutputJsonDict(kanjiArr, "kanjiArray", "docs/dic-kanji.json")
+	hanArr := CreateJsonDict("hangeul-jisyo")
+	OutputJsonDict(hanArr, "hanArray", "docs/dic-hangeul.json")
 	return
 }
