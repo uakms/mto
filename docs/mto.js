@@ -71,8 +71,7 @@ function dictElements() {
     var total = kanaArray.length + kanjiArray.length;
     document.write("<p>現時点での辞書の要素数は " + total +
                    "（かな変換用:" + kanaArray.length +
-                   " 漢字変換用:" + kanjiArray.length + "）" +
-                   "（한글変換用:" + hanArray.length + "）</p>");
+                   " 漢字変換用:" + kanjiArray.length + "）</p>");
 }
 
 function readFileInLocal() {

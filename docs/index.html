@@ -10,7 +10,6 @@
   <body>
     <script src="dic-kana.json"></script>
     <script src="dic-kanji.json"></script>
-    <script src="dic-hangeul.json"></script>
 
     <noscript>
       <p>JavaScriptを有効にしないと使えません(&gt;_&lt;)</p>
@@ -67,19 +66,6 @@
                value="新字体→旧字体"
                style="background:lightpink"
                onclick="replaceStrings(kanjiArray, 0)" /></p>
-
-      <br class="clear" />
-
-      <p class="button_set">
-        日韓変換：
-        <input type="button"
-               value="한글→かな"
-               style="background:lightgray"
-               onclick="replaceStrings(hanArray, 1)" />
-        <input type="button"
-               value="かな→한글"
-               style="background:darkgray"
-               onclick="replaceStrings(hanArray, 0)" /></p>
 
       <br class="clear" />
 
