@@ -13,13 +13,13 @@
 - convert.go (本体の辞書を JSON に変換するもの)
 
 ### うだうだ
-とりあえず [ここ](http://uakms.github.io/mto/) に移動して触ってみれば README を読まんでもわかるんちゃう？(と思ったのは私だけで「結果を入力へ」とかわけわからんらしい。[HowTo](http://uakms.github.io/mto/howto.html) を読んでや。それと w3m のようなテキストブラウザで JavaScript が使えん場合は [こっち](http://mto.herokuapp.com/sp) で試してみてな)
+とりあえず [ここ](https://uakms.github.io/mto/) に移動して触ってみれば README を読まんでもわかるんちゃう？(と思ったのは私だけで「結果を入力へ」とか、わけがわらないそうです。[HowTo](https://uakms.github.io/mto/howto.html) を読んでみてください。また、w3m のようなテキストブラウザを利用していて JavaScript が使えない場合は [こちら](https://mto.herokuapp.com/sp) を試してみてください)
 
 JSON 形式の辞書を参照して文字列を単純に置き換えていきます。複雑なアルゴリズムはなく、テキストエリアに入力されている文字列に対して、辞書の要素すべてを順番に検索＆置換していくだけです。
 
 かつて旧字旧仮名を練習していた時に、それが間違っていないかどうかを Emacs 上で確認するために作成したものが原型になっています。いつの間にか登録している単語が多くなってきて「これは確認するだけでなく、文章の変換目的に使えるのではないか？」と思い至り、Emacs Lisp ではじめて実装しました。
 
-Ruby, Python3, Vim script, Scheme, Perl5, Lua, C#, Common Lisp, Golang, Objective-C, C, node.js, C++, PHP, Swift と異なる言語で実装をしてきました。ファイルオープン、パス、正規表現、配列、ハッシュ、引数の処理など、基本的なものしか触れていませんが、自分にとっては「Hello, World!」的な[課題](https://github.com/uakms/snapshot)となっています。これらのプログラムで利用するためのデータがこの辞書です。
+Ruby, Python3, Vim script, Scheme, Perl5, Lua, C#, Common Lisp, Golang, Objective-C, C, node.js, C++, PHP, Swift と異なる言語で実装をしてきました。ファイルオープン、パス、正規表現、配列、ハッシュ、引数の処理など、基本的なものしか触れていませんが、自分にとっては「Hello, World!」的な課題となっています。これらのプログラムで利用するためのデータがこの辞書です。
 
 GUI 的なものについては、C# で Windows Forms 版、Ruby の Sinatra で Web アプリ、Objective-C で Cocoa 版と iOS 版、JavaScript で Electron 版を作りました。
 
