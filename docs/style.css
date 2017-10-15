@@ -4,6 +4,7 @@ body {
     font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
     font-size: 1.0rem;
     max-width: 960px;
+    -webkit-text-size-adjust: 90%;
 }
 
 h1,h2,h3,h4,h5,h6,hr {
@@ -100,6 +101,10 @@ textarea.mobset {
         width: 390px;
         height: 260px;
     }
+    textarea.mobset {
+        width: 380px;
+        height: 600px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -108,6 +113,10 @@ textarea.mobset {
         font-size: 1.0rem;
         width: 354px;
         height: 180px;
+    }
+    textarea.mobset {
+        width: 350px;
+        height: 470px;
     }
 }
 
@@ -118,6 +127,10 @@ textarea.mobset {
         width: 340px;
         height: 180px;
     }
+    textarea.mobset {
+        width: 340px;
+        height: 460px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -127,6 +140,10 @@ textarea.mobset {
         width: 300px;
         height: 160px;
     }
+    textarea.mobset {
+        width: 300px;
+        height: 370px;
+    }
 }
 
 a {
@@ -134,9 +151,9 @@ a {
 }
 
 input {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     border: 1px solid darkgray;
-    padding: 0.1rem 0.2rem;
+    padding: 0.2rem 0.3rem;
     margin: 0.2rem 0.2rem 0.2rem 0.2rem;
     border-radius: 0.5rem 0.5rem;
     text-decoration: none;
