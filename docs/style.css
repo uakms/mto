@@ -2,8 +2,8 @@
 
 body {
     font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
-    font-size: 100%;
-    -webkit-text-size-adjust: 90%;
+    font-size: 14px;
+    -webkit-text-size-adjust: 14px;
     max-width: 960px;
 }
 
