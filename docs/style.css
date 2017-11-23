@@ -152,6 +152,7 @@ a {
 
 input {
     font-size: 0.8rem;
+    -webkit-text-size-adjust: 0.8rem;
     border: 1px solid darkgray;
     padding: 0.1rem 0.2rem;
     margin: 0.2rem 0.2rem 0.2rem 0.2rem;
