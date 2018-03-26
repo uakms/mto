@@ -13,7 +13,7 @@
 - convert.go (本体の辞書を JSON に変換するもの)
 
 ### うだうだ
-とりあえず [ここ](https://uakms.github.io/mto/) に移動して触ってみれば README を読まんでもわかるんちゃう？(と思ったのは私だけで「結果を入力へ」とか、わけがわらないそうです。[HowTo](https://uakms.github.io/mto/howto.html) を読んでみてください。また、w3m のようなテキストブラウザを利用していて JavaScript が使えない場合は [こちら](https://mto.herokuapp.com/sp) を試してみてください)
+とりあえず [ここ](https://uakms.github.io/mto/) に移動して触ってみれば README を読まんでもわかるんちゃう？(と思ったのは私だけで「結果を入力へ」とか、わけがわらないそうです。[HowTo](https://mto.herokuapp.com/howto) を読んでみてください (ここに戻るにはブラウザの[戻るボタン]を押してください)。また、w3m のようなテキストブラウザを利用していて JavaScript が使えない場合は [こちら](https://mto.herokuapp.com/sp) を試してみてください。
 
 JSON 形式の辞書を参照して文字列を単純に置き換えていきます。複雑なアルゴリズムはなく、テキストエリアに入力されている文字列に対して、辞書の要素すべてを順番に検索＆置換していくだけです。
 
