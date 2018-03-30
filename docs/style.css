@@ -21,16 +21,21 @@ p {
 
 textarea {
     font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
+    border: 2px solid lightgray;
+    border-radius: 0.5rem 0.5rem;
 }
 
 @media screen and (min-width: 415px) {
     textarea {
-        font-size: 1.2rem;
+        font-size: 1.0rem;
     }
 }
 
 @media screen and (max-width: 414px) {
     textarea {
+        font-size: 1.0rem;
+    }
+    textarea.mobset {
         font-size: 1.0rem;
     }
 }
@@ -44,49 +49,49 @@ textarea {
 
 @media screen and (max-width: 800px) {
     textarea {
-        width: 380px;
+        width: 378px;
         height: 380px;
     }
 }
 
 @media screen and (max-width: 768px) {
     textarea {
-        width: 365px;
-        height: 365px;
+        width: 362px;
+        height: 360px;
     }
 }
 
 @media screen and (max-width: 736px) {
     textarea {
-        width: 349px;
-        height: 260px;
+        width: 346px;
+        height: 312px;
     }
 }
 
 @media screen and (max-width: 667px) {
     textarea {
-        width: 314px;
-        height: 224px;
+        width: 312px;
+        height: 274px;
     }
 }
 
 @media screen and (max-width: 640px) {
     textarea {
         width: 300px;
-        height: 200px;
+        height: 260px;
     }
 }
 
 @media screen and (max-width: 568px) {
     textarea {
-        width: 264px;
-        height: 170px;
+        width: 262px;
+        height: 220px;
     }
 }
 
 @media screen and (max-width: 414px) {
     textarea {
-        width: 390px;
+        width: 392px;
         height: 260px;
     }
     textarea.mobset {
@@ -97,34 +102,34 @@ textarea {
 
 @media screen and (max-width: 375px) {
     textarea {
-        width: 354px;
-        height: 180px;
+        width: 352px;
+        height: 200px;
     }
     textarea.mobset {
-        width: 350px;
-        height: 470px;
+        width: 348px;
+        height: 460px;
     }
 }
 
 @media screen and (max-width: 360px) {
     textarea {
-        width: 340px;
-        height: 180px;
+        width: 338px;
+        height: 192px;
     }
     textarea.mobset {
-        width: 340px;
-        height: 460px;
+        width: 334px;
+        height: 440px;
     }
 }
 
 @media screen and (max-width: 320px) {
     textarea {
-        width: 300px;
-        height: 160px;
+        width: 298px;
+        height: 152px;
     }
     textarea.mobset {
-        width: 300px;
-        height: 370px;
+        width: 292px;
+        height: 336px;
     }
 }
 
@@ -166,11 +171,5 @@ p.mobset {
     border: none;
     margin: 0px 5px 2px 0px;
     text-align: center;
-}
-
-textarea.mobset {
-    font-size: 1.2rem;
-    width: 300px;
-    height: 380px;
 }
 /* end SP ページのみ */
