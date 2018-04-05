@@ -1,7 +1,7 @@
 /* vim:ts=4:
  * Author: nakinor
  * Created: 2015-04-09
- * Revised: 2017-05-17
+ * Revised: 2018-04-05
  */
 
 // Go の実行環境をインストールして `go run convert.go` で使ってね♡
@@ -81,10 +81,8 @@ func OutputJsonDict(jsonDictArr []string, pref string, fname string) {
 
 func main() {
 	kanaArr := CreateJsonDict("kana-jisyo")
-	OutputJsonDict(kanaArr, "kanaArray", "docs/dic-kana.json")
+	OutputJsonDict(kanaArr, "kanaArray", "docs/dic-kana.js")
 	kanjiArr := CreateJsonDict("kanji-jisyo")
-	OutputJsonDict(kanjiArr, "kanjiArray", "docs/dic-kanji.json")
-	hanArr := CreateJsonDict("hangeul-jisyo")
-	OutputJsonDict(hanArr, "hanArray", "docs/dic-hangeul.json")
+	OutputJsonDict(kanjiArr, "kanjiArray", "docs/dic-kanji.js")
 	return
 }

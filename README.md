@@ -6,13 +6,15 @@
 
 ### 本体を説明するための付属品
 - docs/mto.js, index.html, sp.html, style.css (画面を構成するため)
-- docs/dic-kana.json, dic-kanji.json (本体の辞書を JSON に変換したもの)
+- docs/dic-kana.js, dic-kanji.js (本体の辞書を変換したもので中身は JSON)
 
 ### その他
 - convert.go (本体の辞書を JSON に変換するもの)
 
-### うだうだ
-とりあえず [ここ](https://mto.herokuapp.com/) に移動して触ってみれば README を読まんでもわかるんちゃう？ (と思ったのは私だけで「結果を入力へ」とか、わけがわらないそうです。[HowTo](https://mto.herokuapp.com/howto) を読んでみてください (ここに戻るにはブラウザの [戻るボタン] を押してください)。また、w3m のようなテキストブラウザを利用していて JavaScript が使えない場合は [こちら](https://mto.herokuapp.com/js/pc.html) を試してみてください)
+### 使い方
+こちらの [ページ](https://mto.herokuapp.com/js/pc.html) に移動して適当な文字列を変換して遊んでください。w3m のようなテキストブラウザを利用していて JavaScript が使えない場合は [こちら](https://mto.herokuapp.com/) を試してみてください。
+
+変換方法の詳しい説明は [HowTo](https://mto.herokuapp.com/howto) を読んでください (GitHub のこのページに戻るにはブラウザの [戻るボタン] を押してください)。
 
 JSON 形式の辞書を参照して文字列を単純に置き換えていきます。複雑なアルゴリズムはなく、テキストエリアに入力されている文字列に対して、辞書の要素すべてを順番に検索＆置換していくだけです。
 
@@ -22,6 +24,6 @@ Ruby, Python3, Vim script, Scheme, Perl5, Lua, C#, Common Lisp, Golang, Objectiv
 
 GUI 的なものについては、C# で Windows Forms 版、Ruby の Sinatra で Web アプリ、Objective-C で Cocoa 版と iOS 版、JavaScript で Electron 版を作りました。
 
-今まで JavaScript は敬遠していましたが、GitHub で動かしてみようと実装しました。この JavaScript で実装したものは、ファイルをダウンロード(docs/ 以下のみで良い)してウェブブラウザで開けばローカルで動きますし、どこかのホームページにアップロードしても(たぶん)動きます。クロスドメインなことはしてませんし。
+今まで JavaScript は敬遠していましたが、GitHub Pages で動かしてみようと実装しました。この JavaScript で実装したものは、ファイルをダウンロード (docs/ 以下のみで良い) してウェブブラウザで開けばローカルで動きますし、どこかのホームページにアップロードしても (たぶん) 動きます。クロスドメインなことはしてませんし。
 
 辞書を自分の好きなように編集して東京弁に変換したり、植物名や国名をカタカナ-漢字変換したりして遊んでください。この辞書を編集する過程でその知識が身につきます(脳に記憶されるッ！)。
