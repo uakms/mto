@@ -1,7 +1,7 @@
 /* vim:ts=4:
  * Author: nakinor
  * Created: 2015-04-09
- * Revised: 2018-04-05
+ * Revised: 2018-04-12
  */
 
 // Go の実行環境をインストールして `go run convert.go` で使ってね♡
@@ -21,7 +21,7 @@ var (
 	reSepa    = regexp.MustCompile(" /")              //辞書の区切り文字
 )
 
-func CreateJsonDict(jisyo string) []string {
+func createJsonDict(jisyo string) []string {
 	jsonDictArr := []string{}
 	ifile, err := os.Open(jisyo)
 	if err != nil {
@@ -62,7 +62,7 @@ func CreateJsonDict(jisyo string) []string {
 	return jsonDictArr
 }
 
-func OutputJsonDict(jsonDictArr []string, pref string, fname string) {
+func outputJsonDict(jsonDictArr []string, pref string, fname string) {
 	ofile, err := os.Create(fname)
 	if err != nil {
 		fmt.Println("ファイルを書き込めませんでした")
@@ -80,9 +80,9 @@ func OutputJsonDict(jsonDictArr []string, pref string, fname string) {
 }
 
 func main() {
-	kanaArr := CreateJsonDict("kana-jisyo")
-	OutputJsonDict(kanaArr, "kanaArray", "docs/dic-kana.js")
-	kanjiArr := CreateJsonDict("kanji-jisyo")
-	OutputJsonDict(kanjiArr, "kanjiArray", "docs/dic-kanji.js")
+	kanaArr := createJsonDict("kana-jisyo")
+	outputJsonDict(kanaArr, "kanaArray", "docs/dic-kana.js")
+	kanjiArr := createJsonDict("kanji-jisyo")
+	outputJsonDict(kanjiArr, "kanjiArray", "docs/dic-kanji.js")
 	return
 }
