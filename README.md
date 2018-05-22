@@ -8,9 +8,6 @@
 - docs/mto.js, index.html, sp.html, style.css (画面を構成するため)
 - docs/dic-kana.js, dic-kanji.js (本体の辞書を変換したもので中身は JSON)
 
-### その他
-- convert.go (本体の辞書を JSON に変換するもの)
-
 ### 使い方
 こちらの [ページ](https://mto.herokuapp.com/js/pc.html) に移動して適当な文字列を変換して遊んでください。w3m のようなテキストブラウザを利用していて JavaScript が使えない場合は [こちら](https://mto.herokuapp.com/) を試してみてください。
 
