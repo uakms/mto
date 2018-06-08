@@ -68,6 +68,13 @@ textarea {
     }
 }
 
+@media screen and (max-width: 694px) {
+    textarea {
+        width: 326px;
+        height: 340px;
+    }
+}
+
 @media screen and (max-width: 667px) {
     textarea {
         width: 312px;
@@ -86,6 +93,20 @@ textarea {
     textarea {
         width: 262px;
         height: 220px;
+    }
+}
+
+@media screen and (max-width: 507px) {
+    textarea {
+        width: 484px;
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 438px) {
+    textarea {
+        width: 414px;
+        height: 340px;
     }
 }
 
