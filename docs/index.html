@@ -16,21 +16,19 @@
     </noscript>
 
     <form name="mto">
-      <p class="set">
-        <span style="font-weight: bold">変換前の文章</span><br />
-        <textarea name="bef" cols="40" rows="10"></textarea><br />
-        <input type="button" value="内容を消去" onclick="del();" /></p>
+      <div class="set">
+        <p class="set-title">変換前の文章</p>
+        <textarea name="bef"></textarea>
+        <input type="button" value="内容を消去" onclick="del();" /></div>
 
-      <p class="set">
-        <span style="font-weight: bold">変換後の文章</span><br />
-        <textarea name="aft" cols="40" rows="10"></textarea><br />
+      <div class="set">
+        <p class="set-title">変換後の文章</p>
+        <textarea name="aft"></textarea>
         <input type="button"
                value="結果を入力へ"
-               onclick="toBeforeTextArea()" /></p>
+               onclick="toBeforeTextArea()" /></div>
 
-      <br class="clear" />
-
-      <p class="button_set">
+      <p class="button-set">
         一括変換：
         <input type="button"
                value="旧文章→新文章"
@@ -43,7 +41,7 @@
 
       <br class="clear" />
 
-      <p class="button_set">
+      <p class="button-set">
         かな変換：
         <input type="button"
                value="旧かな→新かな"
@@ -56,7 +54,7 @@
 
       <br class="clear" />
 
-      <p class="button_set">
+      <p class="button-set">
         漢字変換：
         <input type="button"
                value="旧字体→新字体"
@@ -69,14 +67,13 @@
 
       <br class="clear" />
 
-      <p class="button_set">
+      <p class="button-set">
         <input type="checkbox" id="del_IVS_yes" />
-        異体字セレクタを削除する
-      </p>
+        異体字セレクタを削除する</p>
 
       <br class="clear" />
 
-      <p class="button_set">
+      <p class="button-set">
         ファイルから読込む：
         <input type="file" id="ifile">
         <script>readFileInLocal();</script></p>
@@ -84,8 +81,6 @@
     </form>
 
     <hr />
-
-    <p>スマホ向けのページは<a href="./sp.html">こちら</a>です。</p>
 
     <script>dictElements();</script>
 
