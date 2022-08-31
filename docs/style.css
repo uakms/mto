@@ -32,10 +32,11 @@ p.button-set {
 
 textarea {
     font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
+    font-size: 1.1rem;
     border: 2px solid lightgray;
     border-radius: 0.5rem 0.5rem;
-    width: 90%;
-    aspect-ratio: 3/1.5;
+    width: 92%;
+    aspect-ratio: 2/1;
     height: auto;
 }
 
@@ -49,12 +50,7 @@ div.set {
 
 @media screen and (min-width: 481px) {
     textarea {
-        font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
-        border: 2px solid lightgray;
-        border-radius: 0.5rem 0.5rem;
-        width: 90%;
-        aspect-ratio: 3/2;
-        height: auto;
+        aspect-ratio: 1/1;
     }
 
     div.set {
