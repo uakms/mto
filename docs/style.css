@@ -5,17 +5,11 @@ body {
     max-width: 960px;
 }
 
-hr {
-    clear: both;
-}
+hr {clear: both;}
 
-br.clear {
-    clear: both;
-}
+br.clear {clear: both;}
 
-p {
-    margin: 0.5rem 0.0rem;
-}
+p {margin: 0.5rem 0.0rem;}
 
 p.set-title {
     font-size: 1.2rem;
@@ -23,10 +17,10 @@ p.set-title {
     margin: 0.0rem 0.0rem;
 }
 
-p.button-set {
+div.button-set {
     float: left;
     border: none;
-    margin: 0px 5px 2px 0px;
+    margin: 2px 0px;
 }
 
 textarea {
@@ -48,9 +42,7 @@ div.set {
 }
 
 @media screen and (min-width: 481px) {
-    textarea {
-        aspect-ratio: 1/1;
-    }
+    textarea {aspect-ratio: 1/1;}
 
     div.set {
         float: left;
@@ -63,10 +55,14 @@ div.set {
 
 input {
     font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     border: 1px solid darkgray;
-    padding: 0.0rem 0.5rem;
-    margin: 0.2rem 0.2rem 0.2rem 0.2rem;
     border-radius: 0.5rem 0.5rem;
+    padding: 0.0rem 0.5rem;
     text-decoration: none;
 }
+
+input.bg_oldnew {background: lightgreen;}
+input.bg_newold {background: lightpink;}
+
+a {text-decoration: none;}

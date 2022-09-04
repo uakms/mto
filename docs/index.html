@@ -28,55 +28,55 @@
                value="結果を入力へ"
                onclick="toBeforeTextArea()" /></div>
 
-      <p class="button-set">
-        一括変換：
+      <div class="button-set">
+        一括変換:
         <input type="button"
                value="旧文章→新文章"
-               style="background:lightgreen"
+               class="bg_oldnew"
                onclick="replaceStrings2(kanjiArray, kanaArray, 1)" />
         <input type="button"
                value="新文章→旧文章"
-               style="background:lightpink"
-               onclick="replaceStrings2(kanaArray, kanjiArray, 0)" /></p>
+               class="bg_newold"
+               onclick="replaceStrings2(kanaArray, kanjiArray, 0)" /></div>
 
       <br class="clear" />
 
-      <p class="button-set">
-        かな変換：
+      <div class="button-set">
+        かな変換:
         <input type="button"
                value="旧かな→新かな"
-               style="background:lightgreen"
+               class="bg_oldnew"
                onclick="replaceStrings(kanaArray, 1)" />
         <input type="button"
                value="新かな→旧かな"
-               style="background:lightpink"
-               onclick="replaceStrings(kanaArray, 0)" /></p>
+               class="bg_newold"
+               onclick="replaceStrings(kanaArray, 0)" /></div>
 
       <br class="clear" />
 
-      <p class="button-set">
-        漢字変換：
+      <div class="button-set">
+        漢字変換:
         <input type="button"
                value="旧字体→新字体"
-               style="background:lightgreen"
+               class="bg_oldnew"
                onclick="replaceStrings(kanjiArray, 1)" />
         <input type="button"
                value="新字体→旧字体"
-               style="background:lightpink"
-               onclick="replaceStrings(kanjiArray, 0)" /></p>
+               class="bg_newold"
+               onclick="replaceStrings(kanjiArray, 0)" /></div>
 
       <br class="clear" />
 
-      <p class="button-set">
+      <div class="button-set">
         <input type="checkbox" id="del_IVS_yes" />
-        <label for="del_IVS_yes">異体字セレクタを削除する</label></p>
+        <label for="del_IVS_yes">異体字セレクタを削除する</label></div>
 
       <br class="clear" />
 
-      <p class="button-set">
+      <div class="button-set">
         ファイルから読込む：
         <input type="file" id="ifile">
-        <script>readFileInLocal();</script></p>
+        <script>readFileInLocal();</script></div>
 
     </form>
 
