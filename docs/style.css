@@ -23,6 +23,11 @@ div.button-set {
     margin: 2px 0px;
 }
 
+div.button-pair {
+    display: inline-block;
+    white-space: nowrap;
+}
+
 textarea {
     font-family: "Hiragino Maru Gothic ProN", Osaka, sans-serif;
     font-size: 1.1rem;

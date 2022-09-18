@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="歴史的仮名遣い⇔現代仮名遣い。旧字体⇔新字体。旧字旧仮名⇔新字新仮名。これらの変換をするのためのサンプルページ">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="mto.js"></script>
     <title>サンプルページ</title>
@@ -30,40 +31,49 @@
 
       <div class="button-set">
         一括変換:
-        <input type="button"
-               value="旧文章→新文章"
-               class="bg_oldnew"
-               onclick="replaceStrings2(kanjiArray, kanaArray, 1)" />
-        <input type="button"
-               value="新文章→旧文章"
-               class="bg_newold"
-               onclick="replaceStrings2(kanaArray, kanjiArray, 0)" /></div>
+        <div class="button-pair">
+          <input type="button"
+                 value="旧文章→新文章"
+                 class="bg_oldnew"
+                 onclick="replaceStrings2(kanjiArray, kanaArray, 1)" />
+          <input type="button"
+                 value="新文章→旧文章"
+                 class="bg_newold"
+                 onclick="replaceStrings2(kanaArray, kanjiArray, 0)" />
+        </div>
+      </div>
 
       <br class="clear" />
 
       <div class="button-set">
         かな変換:
-        <input type="button"
-               value="旧かな→新かな"
-               class="bg_oldnew"
-               onclick="replaceStrings(kanaArray, 1)" />
-        <input type="button"
-               value="新かな→旧かな"
-               class="bg_newold"
-               onclick="replaceStrings(kanaArray, 0)" /></div>
+        <div class="button-pair">
+          <input type="button"
+                 value="旧かな→新かな"
+                 class="bg_oldnew"
+                 onclick="replaceStrings(kanaArray, 1)" />
+          <input type="button"
+                 value="新かな→旧かな"
+                 class="bg_newold"
+                 onclick="replaceStrings(kanaArray, 0)" />
+        </div>
+      </div>
 
       <br class="clear" />
 
       <div class="button-set">
         漢字変換:
-        <input type="button"
-               value="旧字体→新字体"
-               class="bg_oldnew"
-               onclick="replaceStrings(kanjiArray, 1)" />
-        <input type="button"
-               value="新字体→旧字体"
-               class="bg_newold"
-               onclick="replaceStrings(kanjiArray, 0)" /></div>
+        <div class="button-pair">
+          <input type="button"
+                 value="旧字体→新字体"
+                 class="bg_oldnew"
+                 onclick="replaceStrings(kanjiArray, 1)" />
+          <input type="button"
+                 value="新字体→旧字体"
+                 class="bg_newold"
+                 onclick="replaceStrings(kanjiArray, 0)" />
+        </div>
+      </div>
 
       <br class="clear" />
 
