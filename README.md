@@ -1,3 +1,9 @@
+ずっと放置していましたが、[新たな場所](https://github.com/okikae/kkh) で活動を再開することになりました。
+
+興味のある方は参加をお願いします。
+
+---
+
 # mto - mojiretsu wo tanjun ni okikae masu.
 
 ### このプロジェクトの本体である辞書 (/ 内)
