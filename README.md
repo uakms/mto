@@ -52,6 +52,6 @@ GUI 的なものについては、C# で Windows Forms 版、Ruby の Sinatra �
 ### 追記
 Heroku の無料 dyno の範囲では月末に停止してしまうことが多くなってきました。利用者が増えたのは嬉しいのですが、JavaScript が利用できない場合を除き、Heroku 版ではなく [GitHub Pages 版](https://uakms.github.io/mto/)の利用をお願いします。
 
-2022 年 11 月 28 日までに mto.herokuapp.com でのサービスは終了する予定です。
+2022 年 11 月 28 日に mto.herokuapp.com でのサービスは終了しました。
 
 2022 年 10 月 01 日より、こちらのページへリダイレクトするようにしました。およそ 2 カ月間のリダイレクト処理ののち、Heroku のアドレスは消滅します。
